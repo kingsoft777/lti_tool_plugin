@@ -10,7 +10,7 @@ In this integration **Open edX is the LTI 1.3 Tool (provider)**. An external
 back via AGS.
 
 - App label: ``openedx_lti_tool_plugin``
-- Edly fork / branch used in EDL deployments: ``git+https://github.com/edly-io/openedx-lti-1.3-tool-plugin.git@ulmo``
+- Edly fork / branch used in EDL deployments: ``https://github.com/kingsoft777/lti_tool_plugin.git@ulmo``
 - Verified with Tutor ``21.0.2`` (Open edX ``ulmo``).
 
 .. contents:: Table of Contents
@@ -56,7 +56,7 @@ This is the recommended path and mirrors the EDL deployment.
 .. code-block:: bash
 
   tutor config save \
-    --set OPENEDX_EXTRA_PIP_REQUIREMENTS='["git+https://github.com/edly-io/openedx-lti-1.3-tool-plugin.git@ulmo"]'
+    --set OPENEDX_EXTRA_PIP_REQUIREMENTS='["git+https://github.com/kingsoft777/lti_tool_plugin.git@ulmo"]'
 
 2. Create a Tutor plugin that appends the required LMS settings through the
    ``openedx-lms-common-settings`` patch:
@@ -125,7 +125,7 @@ Installation on Open edX Devstack
 .. code-block:: bash
 
   cd ~/openedx/src/  # Assuming that devstack is in ~/openedx/devstack/
-  git clone https://github.com/edly-io/openedx-lti-1.3-tool-plugin.git
+  git clone https://github.com/kingsoft777/lti_tool_plugin.git
 
 2. Install plugin on your LMS:
 
@@ -147,7 +147,7 @@ Development Setup
 
 .. code-block:: bash
 
-  git clone https://github.com/edly-io/openedx-lti-1.3-tool-plugin.git
+  git clone https://github.com/kingsoft777/lti_tool_plugin.git
   cd openedx-lti-1.3-tool-plugin
   virtualenv venv && source venv/bin/activate
   make dev-requirements

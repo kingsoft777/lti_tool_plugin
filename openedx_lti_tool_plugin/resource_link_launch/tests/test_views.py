@@ -1,7 +1,3 @@
-# Modified by Edly, 2026.
-# Original source: https://github.com/Pearson-Advance/openedx-lti-tool-plugin
-# Changes: updated tests to match render_xblock fix, map_into_course, and
-#          sequential block type allowance.
 """Tests views module."""
 from unittest.mock import MagicMock, PropertyMock, patch
 

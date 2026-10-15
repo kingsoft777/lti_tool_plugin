@@ -1,8 +1,3 @@
-# Modified by Edly, 2026.
-# Original source: https://github.com/Pearson-Advance/openedx-lti-tool-plugin
-# Changes: fix render_xblock redirect to use usage_key instead of course_key,
-#          add map_into_course normalisation, allow sequential block launches,
-#          fix get_launch_response return type annotation.
 """Django Views.
 
 Attributes:

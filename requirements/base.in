@@ -1,8 +1,3 @@
-# Modified by Edly, 2026.
-# Original source: https://github.com/Pearson-Advance/openedx-lti-tool-plugin
-# Changes: removed platform-provided packages and constraints reference to
-#          prevent pip from downgrading edx-platform packages during install.
-# Core requirements for using this application.
 #
 # Platform-provided packages (Django, edx-opaque-keys, edx-toggles, celery,
 # djangorestframework, edx-drf-extensions, jsonschema) are intentionally
