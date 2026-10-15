@@ -305,7 +305,7 @@ class TestLtiGradedResourcePublishScoreGuard(TestLtiGradedResourceBaseTestCase):
     """Test publish_score timestamp freshness and unchanged-score guard."""
 
     @patch(f'{MODULE_PATH}.datetime')
-    def test_timestamp_evaluated_per_call(
+    def test_timestamp_evaluated_per_call(  # pylint: disable=unused-argument
         self,
         datetime_mock: MagicMock,
         tool_conf_mock: MagicMock,
@@ -321,7 +321,7 @@ class TestLtiGradedResourcePublishScoreGuard(TestLtiGradedResourceBaseTestCase):
 
         datetime_mock.now.assert_called_once_with(tz=timezone.utc)
 
-    def test_skips_publish_when_score_unchanged(
+    def test_skips_publish_when_score_unchanged(  # pylint: disable=unused-argument
         self,
         tool_conf_mock: MagicMock,
         message_mock: MagicMock,
@@ -334,7 +334,7 @@ class TestLtiGradedResourcePublishScoreGuard(TestLtiGradedResourceBaseTestCase):
         # DjangoMessageLaunch is only constructed when an actual send happens.
         message_mock.assert_called_once()
 
-    def test_publishes_again_when_score_changes(
+    def test_publishes_again_when_score_changes(  # pylint: disable=unused-argument
         self,
         tool_conf_mock: MagicMock,
         message_mock: MagicMock,

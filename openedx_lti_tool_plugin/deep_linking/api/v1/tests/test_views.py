@@ -185,7 +185,7 @@ class TestCourseBlockContentItemViewSet(TestCase):
     @patch(f'{MODULE_PATH}.CourseKey')
     @patch.object(CourseContext.objects, 'all_for_lti_tool')
     @patch(f'{MODULE_PATH}.get_identity_claims')
-    def test_list(
+    def test_list(  # pylint: disable=unused-argument
         self,
         get_identity_claims_mock: MagicMock,
         all_for_lti_tool_mock: MagicMock,
